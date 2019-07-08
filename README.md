@@ -1,9 +1,9 @@
 # mpd-docker
-## an mpd docker container for streaming over http using alpine
-two outputs over http with a bitrate of 320 or 1411  
-http stream will be on port 8000  
-you can connect on port 6600
-### example
+## An mpd docker container for streaming over http
+Two outputs over http with a bitrate of 320 or 1411  
+Http stream will be on port 8000  
+You can connect on port 6600
+### Example
 docker create \  
 --name mpd \  
 -p 6600:6600 \  
