@@ -11,4 +11,4 @@ docker create \
 -v mpdplaylists:/var/lib/mpd/playlists \  
 -v /mnt/raid/music:/var/lib/mpd/music \  
 --restart unless-stopped \  
-mpd:latest   
+philipwold/mpd:latest
