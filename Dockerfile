@@ -1,6 +1,4 @@
-# Dockerfile for mpd
-
-FROM alpine:3.10
+FROM philipwold/alpine-tini
 
 RUN apk add --no-cache mpd
 COPY mpd.conf /etc/mpd.conf
