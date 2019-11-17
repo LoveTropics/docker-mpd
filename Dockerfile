@@ -1,11 +1,11 @@
 FROM philipwold/alpine-tini
 
 RUN apk add --no-cache mpd
-RUN adduser -S -D -u 1000 -g 1000 -s /sbin/nologin user
+RUN adduser -S -D -u 1000 -g 1000 -s /sbin/nologin mpd
 
 COPY mpd.conf /etc/mpd.conf
 
-USER user
+USER mpd
 
 CMD [ "mpd", "--stdout", "--no-daemon" ]
 
