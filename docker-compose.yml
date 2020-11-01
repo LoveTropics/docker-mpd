@@ -1,0 +1,16 @@
+version : "3.7"
+
+services:  
+  mpd:
+    image: philipwold/mpd:latest
+    container_name: mpd
+    volumes:
+      - mpd-playlists:/var/lib/mpd/playlists
+      - /srv/sto3/music:/var/lib/mpd/music
+    ports:
+      - 6600:6600
+      - 8000:8000
+    restart: unless-stopped
+
+volumes:
+  mpd-playlists:
