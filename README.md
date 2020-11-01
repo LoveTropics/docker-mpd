@@ -33,6 +33,6 @@ if [ "[playing]" = "$(mpc | sed -n 2p | awk '{print $1;}')" ]
    mpc -h $serverip play
    mpc play
 fi
-```
+````
 - Edit the config of a mpd client like ncmpcpp to point it to your File server/NAS so you can remotely controll the stream.
 - Profit?
