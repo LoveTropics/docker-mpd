@@ -1,4 +1,5 @@
 # mpd-docker
+https://hub.docker.com/r/philipwold/mpd
 ## An mpd docker container for streaming over http
 Two outputs over http with a bitrate of 320 or 1411  
 Http stream will be on port 8000  
