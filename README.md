@@ -36,3 +36,5 @@ fi
 ````
 - Edit the config of a mpd client like ncmpcpp to point it to your File server/NAS so you can remotely controll the stream.
 - Profit?
+### Todo
+-[ ] Map alsa to the container so i can plug my amp directly into my NAS. 
