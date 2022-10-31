@@ -2,8 +2,9 @@ version : "3.7"
 
 services:  
   mpd:
-    image: philipwold/mpd:latest
-    container_name: mpd
+    container_name: music-stream
+    build:
+      context: ./
     volumes:
       - ./ltts-data/playlists:/var/lib/mpd/playlists
       - ./ltts-data/music:/var/lib/mpd/music
