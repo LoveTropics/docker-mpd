@@ -1,4 +1,4 @@
-FROM philipwold/alpine-tini
+FROM alpine:latest
 
 RUN apk add --no-cache mpd
 
