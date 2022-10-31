@@ -5,12 +5,9 @@ services:
     image: philipwold/mpd:latest
     container_name: mpd
     volumes:
-      - mpd-playlists:/var/lib/mpd/playlists
-      - /srv/sto3/music:/var/lib/mpd/music
+      - ./ltts-data/playlists:/var/lib/mpd/playlists
+      - ./ltts-data/music:/var/lib/mpd/music
     ports:
       - 6600:6600
-      - 8000:8000
+      - 8080:8080
     restart: unless-stopped
-
-volumes:
-  mpd-playlists:
